@@ -75,7 +75,7 @@ $scope.reset = function() {
               url: baseURL+"/events/txn-event/CUST898920",
               method: "POST",
               headers: new Headers({ 'Content-Type': 'application/json' }),
-              data: "{\"eventType\":\"merchandise\",\"amount\":"+$scope.price+",\"transactionId\": "+ rand +
+              data: "{\"eventType\":\"merchandise\",\"transactionAmount\":"+$scope.price+",\"transactionId\": "+ rand +
               ",\"transactionCountry\":\""+$scope.countryStr+"\",\"paymentMode\":\""+$scope.paymentMode+"\"}"
 
           })
